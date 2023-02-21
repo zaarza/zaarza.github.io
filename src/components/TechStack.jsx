@@ -4,7 +4,7 @@ function TechStack() {
   return (
     <div className="p-5 w-fit" id="skills">
       <div className="flex flex-col gap-y-8">
-        <div className="flex flex-col gap-y-4 md:max-w-[500px]">
+        <div className="flex flex-col gap-y-4">
           <div className="flex flex-col gap-y-1">
             <h2 className="text-blue-500 text-2xl font-bold">Tech Stack</h2>
             <p className="text-gray-700">The technology or framework I've learned so far</p>
@@ -21,6 +21,9 @@ function TechStack() {
               <img src="assets/icons/javascript.png" alt="" className="pointer-events-none" />
             </div>
             <div className="w-[42px]">
+              <img src="assets/icons/sass.png" alt="" className="pointer-events-none" />
+            </div>
+            <div className="w-[42px]">
               <img src="assets/icons/bootstrap.png" alt="" className="pointer-events-none" />
             </div>
             <div className="w-[42px]">
@@ -31,6 +34,9 @@ function TechStack() {
             </div>
             <div className="w-[42px]">
               <img src="assets/icons/reactjs.png" alt="" className="pointer-events-none" />
+            </div>
+            <div className="w-[42px]">
+              <img src="assets/icons/redux.png" alt="" className="pointer-events-none" />
             </div>
           </div>
         </div>
@@ -47,10 +53,10 @@ function TechStack() {
               <img src="assets/icons/typescript.png" alt="" className="pointer-events-none" />
             </div>
             <div className="w-[42px]">
-              <img src="assets/icons/redux.png" alt="" className="pointer-events-none" />
+              <img src="assets/icons/react-testing-library.png" alt="" className="pointer-events-none" />
             </div>
             <div className="w-[42px]">
-              <img src="assets/icons/react-testing-library.png" alt="" className="pointer-events-none" />
+              <img src="assets/icons/jest.png" alt="" className="pointer-events-none" />
             </div>
           </div>
         </div>

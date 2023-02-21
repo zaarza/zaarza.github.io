@@ -8,7 +8,7 @@ function Project() {
   return (
     <div className="p-5 flex flex-col gap-y-1" id="projects">
       <h2 className="text-blue-500 text-2xl font-bold">Here's what I've made</h2>
-      <div className="flex flex-col gap-y-14 md:flex-row gap-x-5">
+      <div className="flex flex-col gap-y-14 md:flex-row gap-x-5 flex-wrap">
         {Projects.map((project) => <ProjectCard key={project.id} project={project} />)}
       </div>
     </div>

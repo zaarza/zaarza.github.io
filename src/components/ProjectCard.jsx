@@ -8,17 +8,17 @@ function ProjectCard({ project, size }) {
   } = project;
 
   return (
-    <div className={size === 'full' ? 'flex flex-col gap-y-6' : 'flex flex-col gap-y-6 md:max-w-[350px]'}>
+    <div className={size === 'full' ? 'flex flex-col gap-y-6' : 'flex flex-col gap-y-6 md:max-w-[350px] justify-between'}>
       <div className="group overflow-hidden">
         <img src={imageUrl} alt="app project" className="group-hover:scale-110 transition-all duration-300" />
       </div>
       {size === 'full' ? (
         <div className="flex flex-col gap-y-2">
           <h3 className="text-gray-700 font-semibold text-2xl">{name}</h3>
-          <p className="text-gray-700 leading-7">{description}</p>
+          <p className="text-gray-700 leading-7 line-clamp-3">{description}</p>
         </div>
       ) : (
-        <Link to={`/detail/${id}`} className="flex flex-col gap-y-2 group">
+        <Link to={`/detail/${id}`} className="flex flex-col gap-y-2 group min-h-[100px]">
           <h3 className="text-gray-700 font-semibold text-xl line-clamp-1 group-hover:text-blue-500">{name}</h3>
           <p className="text-gray-700 line-clamp-4 leading-7">{description}</p>
         </Link>
